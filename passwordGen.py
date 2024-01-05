@@ -1,5 +1,4 @@
 import random
-import colorama
 import string
 
 if __name__ == "__main__":
@@ -28,8 +27,8 @@ def randomPassword():
                     # Add a random uppercase letter to the characters
                     passwordCharacters.append(random.choice(string.ascii_uppercase))
         # Join the characters and print it
-        print(colorama.Fore.GREEN + "".join(passwordCharacters))
-        print(colorama.Fore.RESET + '------------------')
+        print("".join(passwordCharacters))
+        print('------------------')
         # Ask if you want to make another password
         again = input("Would you like to make another one? (y/n) ")
         if again.lower() == 'y':
